@@ -28,5 +28,5 @@ Depends:
     ${python:Depends},
     qubes-mgmt-salt,
     qubes-mgmt-salt-config,
-    python-wrapt 
+    python3-wrapt 
 Description: Qubes+Salt management override libs.
