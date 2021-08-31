@@ -15,4 +15,8 @@ ifndef LOADING_PLUGINS
             RPM_SPEC_FILES := $(call get-mgmt-rpm-spec)
         endif
     endif
+    ifeq ($(DIST),bullseye)
+        sed -i s/python/python3/ $(CHROOT_DIR)/$(DIST_SRC)/debian/rules
+    endif
+       
 endif
